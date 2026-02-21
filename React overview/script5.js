@@ -31,3 +31,22 @@ for (let i = 0; i < user.profile.length; i++) {
 }
 console.log(output);
 
+// answer using map function
+let outputMap = {};
+user.profile.map((item, index) => {
+    let name = item.name;
+    let rating = user.rating[index].count;
+    outputMap[name] = { rating: rating };
+});
+console.log(outputMap);
+
+// map with for loop 
+let outputMapForLoop = {};
+for (let i = 0; i < user.profile.length; i++) {
+    let name = user.profile[i].name;
+    let rating = user.rating[i].count;
+    outputMapForLoop[name] = { rating: rating };
+}
+console.log(outputMapForLoop);
+
+
