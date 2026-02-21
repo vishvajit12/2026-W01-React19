@@ -5,3 +5,5 @@ console.log("Hello, World! This is script1.js");
 var x = 10;
 var x = 20;
 console.log(x); // Output: 20
+
+let num = [19, 45, 42, 8, 15];
